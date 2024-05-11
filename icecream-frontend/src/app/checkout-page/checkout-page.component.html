@@ -1,1 +1,21 @@
-<p>checkout-page works!</p>
+<div class="container">
+  <h1 class="mt-5 mb-4">Checkout</h1>
+  <div *ngIf="selectedItems.length > 0; else noItems">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let item of selectedItems">
+        <div class="row">
+          <div class="col-md-4">
+            <img [src]="item.src" [alt]="item.alt" class="img-thumbnail">
+          </div>
+          <div class="col-md-8">
+            <h5>{{ item.text }}</h5>
+            <!-- Add more details as needed -->
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <ng-template #noItems>
+    <p>No items selected.</p>
+  </ng-template>
+</div>

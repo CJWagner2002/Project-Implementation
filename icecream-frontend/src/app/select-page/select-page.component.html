@@ -1,1 +1,170 @@
-<p>select-page works!</p>
+<body>
+<div class="container">
+  <h1 class="mt-5 mb-4">Order Here</h1>
+  <div class="row">
+    <div class="col-md-3" *ngFor="let image of images">
+      <div class="image-container" (click)="selectImage(image)" [ngClass]="{'selected': image.selected}">
+        <img [src]="image.src" [alt]="image.alt">
+        <p class="text-center">{{ image.text }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="image-container" onclick="selectImage(this)">
+        <img src="../assets/images/smallcone.jpg" alt="Image 1">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Small Cone
+  </label>
+</div>
+        <p class="text-center"></p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="image-container" onclick="selectImage(this)">
+        <img src="../assets/images/largecone.jpg" alt="Image 2">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Large Cone
+  </label>
+</div>
+        <p class="text-center"></p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="image-container" onclick="selectImage(this)">
+        <img src="../assets/images/waffelbowl.png" alt="Image 3">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Waffle Bowl
+  </label>
+</div>
+        <p class="text-center"></p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="image-container" onclick="selectImage(this)">
+        <img src="../assets/images/bowl.jpg" alt="Image 4">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Bowl
+  </label>
+</div>
+        <p class="text-center">Bowl</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="image-container" onclick="selectImage(this)">
+        <img src="../assets/images/chocholate.png" alt="Image 5">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Chocolate
+  </label>
+</div>
+        <p class="text-center"></p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="image-container" onclick="selectImage(this)">
+        <img src="../assets/images/cookiesncream.png" alt="Image 6">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Cookies & Cream
+  </label>
+</div>
+        <p class="text-center"></p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="image-container" onclick="selectImage(this)">
+        <img src="../assets/images/Supermoon.png" alt="Image 7">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Supermoon
+  </label>
+</div>
+        <p class="text-center"></p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="image-container" onclick="selectImage(this)">
+        <img src="../assets/images/NebulaBerry.png" alt="Image 8">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Nebula Berry
+  </label>
+</div>
+        <p class="text-center"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="image-container" onclick="selectImage(this)">
+        <img src="../assets/images/sprinkles.jpg" alt="Image 9">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Sprinkles
+  </label>
+</div>
+        <p class="text-center"></p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="image-container" onclick="selectImage(this)">
+        <img src="../assets/images/chocolatechips.jpg" alt="Image 10">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Chocolate Chips
+  </label>
+</div>
+        <p class="text-center"></p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="image-container" onclick="selectImage(this)">
+        <img src="../assets/images/MnM.jpeg" alt="Image 11">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    M&M's
+  </label>
+</div>
+        <p class="text-center"></p>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="image-container" onclick="selectImage(this)">
+        <img src="../assets/images/chocolatesauce.jpg" alt="Image 12">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Chocolate Sauce
+  </label>
+</div>
+        <p class="text-center"></p>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-md-12 text-center">
+      <button class="btn btn-primary" routerLink="/checkout">Continue to Checkout</button>
+    </div>
+  </div>
+</div>
+</body>
