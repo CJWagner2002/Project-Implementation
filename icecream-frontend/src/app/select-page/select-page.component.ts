@@ -16,7 +16,6 @@ export class SelectPageComponent {
   @Output() selectedImages = new EventEmitter<any[]>();
   selectImage(image: any) {
     image.selected = !image.selected;
-    console.log('Selected Images:', this.images.filter(img => img.selected));
     this.selectedImages.emit(this.images.filter(img => img.selected));
 
   }
