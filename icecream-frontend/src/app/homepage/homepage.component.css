@@ -1,0 +1,53 @@
+/* Adjust image width to match container */
+.img-fluid {
+  max-width: 100%;
+}
+
+/* Ensure the first image spans the full width */
+.col-md-12 img {
+  width: 100%;
+}
+
+/* Style for the paragraph on top of the first image */
+.col-md-12 a {
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: bolder;
+}
+
+.col-md-12 span {
+  background-color: black;
+  padding: 50px 50px;
+  border-radius: 20px;
+  opacity: 0.7;
+}
+
+.col-md-12 b span {
+  position: absolute;
+  top: 650px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.col-md-6 p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.col-md-12 p {
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.flavors-box {
+  background-color: rgb(219, 179, 126);
+  padding: 20px;
+  border: 2px solid rgb(161, 131, 91);
+}
